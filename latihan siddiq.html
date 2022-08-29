@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <title>Latihan Siddiq</title>
     <h1>Bootcamp Lussa</h1>
 
@@ -14,7 +15,7 @@
             });
         </script>
     <style>
-        div{
+        #div1{
             box-shadow: 6px 6px 9px 3px #618127;
             width: 700px;
             padding-bottom: 1px;
@@ -26,12 +27,35 @@
             text-align: left;
             margin-left: 250px;
         }
+
         img{
             border-radius: 5px;
         }
+
+        input[type=text], select {
+                width: 100%;
+                padding: 12px 20px;
+                margin: 8px 0;
+                display: inline-block;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                box-sizing: border-box;
+        }
+        
+        input[type=submit] {
+                width: 100%;
+                background-color: #4CAF50;
+                color: white;
+                padding: 12px 20px;
+                margin: 8px 0;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+            }
     </style>
 </head>
-<body>
+
+<body style="background-color: beige;">
 
     <center>
         <h1>Bab 1</h1>
@@ -39,7 +63,7 @@
     </center>
 
     <!-- Masuk Konten -->
-    <div>
+    <div id="div1">
         <!-- Data Diri-->
         <center>
             <h2>Data Diri</h2>
@@ -47,19 +71,20 @@
             <p id="datadiri">
                 Nama : Siddiq Ahmad Anshori
                 <br>Asal &ensp;: Sumedang
-                <br>Email : siddiq.anshori@gmail.com
+                <br>Email : <a href=""></a> siddiq.anshori@gmail.com
                 <br>Telp &ensp;: 085659425705
             </p>
         </center>
     </div>
 
-    <br><br>
+    <br><br><br>
 
-    <div>
+    <div id="div1">
         <!-- tabel -->
         <center>
             <table border="1" cellpadding="10">
-            <caption><h3>Daftar Peserta Bootcamp Lussa</h3></caption>
+            <caption><div class="card-footer"><a class="btn btn-primary btn-sm" href="#!">
+                </a><h3>Daftar Peserta Bootcamp Lussa</h3></a></div></caption>
             <tr>
                 <th>Nama</th>
                 <th>NIM</th>
@@ -69,19 +94,19 @@
             <tr>
                 <td>Alex Purwadito</td>
                 <td>3411211069</td>
-                <td>B</td>
+                <td>Weekend</td>
                 <td>Cimahi</td>
             </tr>
             <tr>
                 <td>Samuel Mujaro</td>
                 <td>341121037</td>
-                <td>B</td>
+                <td>Weekday</td>
                 <td>Purwakarta</td>
             </tr>
             <tr>
                 <td>Siddiq Anshori</td>
                 <td>3411211070</td>
-                <td>B</td>
+                <td>Weekday</td>
                 <td>Sumedang</td>
             </tr>
         </table>
@@ -92,6 +117,26 @@
     <br><br><br>
     
     <!-- Form -->
-
+    <div id="div1" style="padding: 25px;">
+        <form action="/action_page.php">
+            <center><caption><h3>Isi Data</h3></caption></center>
+            <label for="fname">Nama Depan</label>
+            <input type="text" id="fname" name="nama depan" placeholder="Nama anda..">
+            
+            <label for="1name">Nama Belakang</label>
+            <input type="text" id="fname" name="nama belakang" placeholder="Nama belakang anda..">
+            
+            <label for="negara">Asal Negara</label>
+            <select id="negara" name="negara">
+                <option value="indonesia">Indonesia</option>
+                <option value="australia">Australia</option>
+                <option value="canada">Canada</option>
+                <option value="usa">USA</option>
+            </select>
+            
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+    <br><br><br>
 </body>
 </html>
